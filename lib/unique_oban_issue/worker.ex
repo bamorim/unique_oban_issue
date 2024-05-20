@@ -38,6 +38,6 @@ defmodule UniqueObanIssue.Worker do
       %{name: name},
       unique: [states: [:scheduled, :available]]
     )
-    |> Oban.insert()
+    |> Oban.insert!()
   end
 end
