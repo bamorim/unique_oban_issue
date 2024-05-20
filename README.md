@@ -1,7 +1,11 @@
 # UniqueObanIssue
 
-To start your Phoenix server:
+This repo reproduces a race condition issue caused by the way Oban handles the advisory lock "locked" state when inserting unique jobs.
 
+## Running
+
+To start your Phoenix server:
+  * Start postgres with `docker-compose up -d`
   * Run `mix setup` to install and setup dependencies
   * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
 
